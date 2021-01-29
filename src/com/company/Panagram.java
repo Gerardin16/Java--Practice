@@ -23,7 +23,7 @@ public class Panagram {
         
         int charIndex;
         String toLower=givenText.toLowerCase();
-
+        //for(datatype variable_name:array or string)--syntax
         for (char letterInSentence:alphabets)
         {
             charIndex=toLower.indexOf(letterInSentence);
