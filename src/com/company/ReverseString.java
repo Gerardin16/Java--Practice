@@ -6,11 +6,11 @@ public class ReverseString {
 
     public static void main(String[] args) {
         // reverse a string
-        String word="Jerwin";
-        String reverseWord="";
+        Scanner input=new Scanner(System.in);
+        String word=input.next();
         StringBuilder givenInput=new StringBuilder();
         givenInput.append(word);
-        reverseWord=String.valueOf(reverse(givenInput));
+        String reverseWord=String.valueOf(reverse(givenInput));
         System.out.println(reverseWord);
 //        Get input from user use below
 //        System.out.print("Enter the word:");
@@ -23,7 +23,7 @@ public class ReverseString {
 
     private static String reverse(StringBuilder input) {
 
-        StringBuilder result= new StringBuilder();
+        StringBuilder result;
         result=input.reverse();
         return String.valueOf(result);
 
