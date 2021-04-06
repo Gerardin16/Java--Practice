@@ -71,7 +71,7 @@ public class FindMaxChars<Char> {
         Optional<HashMap.Entry<K, V>> maxEntry = map.entrySet()
                 .stream()
                 .max(Comparator.comparing(HashMap.Entry::getValue));
-
+        System.out.println(maxEntry.get().getValue());
         return maxEntry.get()
                 .getKey();
     }
